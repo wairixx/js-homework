@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Name page for HTML</title>
+    </head>
+<body>
+
+    <script>
+        let continueProgram = true;
+
+        while (continueProgram) {
+            let result = confirm("Select Ok to continue or Cancel to stop the program");
+            if(result){
+                let x = prompt("Enter value of x");
+                let y = prompt("Enter value of y in the range from 0 to 4");
+
+                switch (parseInt(y)) {
+                    case 0:
+                        console.log(1)
+                        break;
+                    case 1:
+                        console.log(x)
+                        break;    
+                    case 2:
+                        console.log(x * x)
+                        break;    
+                    case 3:
+                        console.log(x * x * x)
+                        break;    
+                    case 4:
+                        console.log(x * x * x * x)
+                        break;                 
+            
+                    default:
+                        console.log("invailid input for y")
+                        break;
+                }
+            }
+            else{
+                continueProgram = false;
+                console.log("Робота програми завершена.");
+            }
+        }
+    </script>
+</body>
+</html>
