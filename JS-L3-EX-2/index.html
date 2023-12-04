@@ -9,8 +9,7 @@
 <body>
 
     <script>
-        function check(result){
-        if(result){
+        function calculate(){
                 let x = prompt("Enter value of x");
                 let y = prompt("Enter value of y in the range from 0 to 4");
 
@@ -35,18 +34,19 @@
                         console.log("invalid input for y")
                         break;
                 }
-            }
-            else{
-                continueProgram = false;
-                console.log("The program stopped");
-            }
         }
 
         let continueProgram = true;
 
         while (continueProgram) {
             let result = confirm("Select Ok to continue or Cancel to stop the program");
-            check(result);
+            if(result){
+                calculate();
+            }
+            else{
+                continueProgram = false;
+                console.log("The program stopped");
+            }
         }
     </script>
 </body>

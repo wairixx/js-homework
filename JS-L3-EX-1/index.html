@@ -9,7 +9,11 @@
 <body>
 
     <script>
-            function calculate(){
+        let continueProgram = true;
+
+        while (continueProgram) {
+            let result = confirm("Select Ok to continue or Cancel to stop the program");
+            if(result){
                 let x = prompt("Enter value of x");
                 let y = prompt("Enter value of y in the range from 0 to 4");
 
@@ -29,26 +33,17 @@
                     case 4:
                         console.log(x * x * x * x)
                         break;                 
-            
+
                     default:
-                        console.log("invalid input for y")
+                        console.log("invailid input for y")
                         break;
                 }
-        }
-
-        let continueProgram = true;
-
-        while (continueProgram) {
-            let result = confirm("Select Ok to continue or Cancel to stop the program");
-            if(result){
-                calculate();
             }
             else{
                 continueProgram = false;
                 console.log("The program stopped");
             }
         }
-
 
     </script>
 </body>
